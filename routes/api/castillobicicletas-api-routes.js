@@ -12,5 +12,7 @@ router.post('/create', bicicletaController.bicicleta_create);
 // Define la ruta DELETE '/delete' que llama al método 'bicicleta_delete' del controlador 'bicicletaController'
 router.delete('/delete', bicicletaController.bicicleta_delete);
 
+router.put('/update', bicicletaController.bicicleta_update_post);
+
 // Exporta el enrutador para que pueda ser utilizado en otros archivos
 module.exports = router;
